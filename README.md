@@ -7,7 +7,7 @@ This example uses Proximal Policy Optimization with Ray (RLlib).
 
 **The container in Sagemaker Jupyter notebook instance:**
 
-![image](/assets/images/sagemaker_container.png)
+![image](/img/sagemaker_container.png)
 
 ---
 
