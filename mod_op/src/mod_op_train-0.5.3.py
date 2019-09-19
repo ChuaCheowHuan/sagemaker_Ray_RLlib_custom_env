@@ -60,7 +60,7 @@ class MyLauncher(SageMakerRayLauncher):
               #"use_gpu_for_workers": False,
               "train_batch_size": 128, #5,
               "sample_batch_size": 32, #1,
-              #"gpu_fraction": 0.3,
+              "gpu_fraction": 0.3,
               "optimizer": {
                 "grads_per_step": 10
               },
@@ -68,8 +68,8 @@ class MyLauncher(SageMakerRayLauncher):
             #"trial_resources": {"cpu": 1, "gpu": 0, "extra_gpu": max(self.num_total_gpus-1, 1), "extra_cpu": 0},
             #"trial_resources": {"cpu": 1, "gpu": 0, "extra_gpu": max(self.num_total_gpus-1, 0),
             #                    "extra_cpu": max(self.num_cpus-1, 1)},
-            #"trial_resources": {"cpu": 1,
-            #                    "extra_cpu": max(self.num_cpus-1, 1)},              
+            "trial_resources": {"cpu": 1,
+                                "extra_cpu": max(self.num_cpus-1, 1)},              
           }
         }
 

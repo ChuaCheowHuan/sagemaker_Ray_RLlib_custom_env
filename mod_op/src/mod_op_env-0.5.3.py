@@ -108,10 +108,7 @@ class ArrivalSim(gym.Env):
         #self.revenue = max(np.random.poisson(sigmoid_price_fun(self.price, 50, 0.5)) * self.price, 0)
         #return max(np.random.poisson(sigmoid_price_fun(self.price, 50, 0.5)) * self.price, 0)
         self.revenue = max(np.random.poisson(sigmoid_price_fun(self.price[0], 50, 0.5)) * self.price[0], 0)
-        
-        #return max(np.random.poisson(sigmoid_price_fun(self.price[0], 50, 0.5)) * self.price[0], 0)
-        return max(np.random.poisson(sigmoid_price_fun(self.price[0], 50, 0.5)) * self.price[0], 0) * 0.01
-
+        return max(np.random.poisson(sigmoid_price_fun(self.price[0], 50, 0.5)) * self.price[0], 0)
 
 #     def render(self, mode='human'):
 #         super().render(mode)

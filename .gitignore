@@ -1,0 +1,7 @@
+__pycache__/
+err.txt
+.DS_Store
+*.pyc
+.ipynb_checkpoints/
+notebook_output.txt
+err*

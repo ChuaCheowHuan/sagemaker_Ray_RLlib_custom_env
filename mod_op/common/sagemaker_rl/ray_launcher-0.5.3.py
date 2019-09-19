@@ -10,12 +10,8 @@ import boto3
 
 import ray
 from ray.tune import run_experiments
-#from ray.rllib.agents.agent import get_agent_class
-try: # new
-    from ray.rllib.agents.agent import get_agent_class    
-except ImportError:
-    from ray.rllib.agents.registry import get_agent_class  
-    
+from ray.rllib.agents.agent import get_agent_class
+
 from .tf_serving_utils import export_tf_serving, natural_keys, change_permissions_recursive
 from .configuration_list import ConfigurationList
 from .sage_cluster_communicator import SageClusterCommunicator
